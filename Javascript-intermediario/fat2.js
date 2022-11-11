@@ -1,5 +1,15 @@
-let n = 9;
-let nZero = 9;
+let lines = gets().split("\n"); 
+let n = parseInt(lines.shift()); 
+
+if (n <= 2) { 
+
+ print(n); 
+
+} 
+
+// TODO: Calcule o valor do fatorial de "n", atribuindo o retorno a "r".
+
+let nZero = n;
 let soma = 0;
 const varia = -1;
                                     
@@ -23,16 +33,4 @@ if (n == 3) {
     soma += varia * n
 }
 
-
-
-
-
-
-console.log(soma);
-
-let contas = parseInt(9 * 8 / 7) + 6 - parseInt( 5 * 4 / 3) + 2 - 1;
-console.log(contas)
-
-// n!d = n * [parseInt((n-1) / (n-2))] + (n-3) - (n-4)...
-// usar break?
-// usar módulo?
+print(soma);
